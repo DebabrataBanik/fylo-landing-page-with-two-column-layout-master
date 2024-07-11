@@ -25,6 +25,13 @@ body{
 img{
   max-width: 100%;
 }
+button{
+  cursor: pointer;
+  transition: all 0.25s;
+}
+input{
+  outline: none;
+}
 
 header{
   margin-bottom: 5rem;
@@ -57,7 +64,7 @@ ul{
 main{
   width: 90%;
   margin-inline: auto;
-  margin-bottom: 12.5rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +122,10 @@ main{
   color: var(--light-grayish-blue);
   font-family: var(--ff-headings);
   font-weight: 700;
+  position: relative;
+}
+.hero--btn:hover{
+  filter: brightness(1.5);
 }
 
 picture img{
@@ -165,6 +176,7 @@ picture img{
   align-items: center;
   gap: 0.5rem;
   position: relative;
+  transition: all 0.25s;
 }
 .aside a::after{
   position: absolute;
@@ -174,6 +186,9 @@ picture img{
   left: 0;
   background-color: var(--moderate-cyan);
   height: 1px;
+}
+.aside a:hover{
+  filter: brightness(1.5);
 }
 
 article{
@@ -274,6 +289,9 @@ h3{
   font-weight: 700;
   font-size: 0.7rem;
 }
+.signup button:hover{
+  filter: brightness(1.5);
+}
 
 footer{
   background-color: var(--very-dark-blue);
@@ -282,7 +300,7 @@ footer{
   padding-block: 4rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 .logo{
   width: 150px;
@@ -317,6 +335,10 @@ footer{
 .footer--links a{
   text-decoration: none;
   color: var(--light-grayish-blue);
+  transition: all 0.2s;
+}
+.footer--links a:hover{
+  color: var(--desaturated-blue);
 }
 
 .socials{
@@ -327,11 +349,15 @@ footer{
 }
 i{
   font-size: 12px;
-}
-.circle{
+  cursor: pointer;
   border: 1px solid var(--light-grayish-blue);
   padding: 0.5rem;
   border-radius: 50%;
+  transition: all 0.2s;
+}
+i:hover{
+  border-color: var(--desaturated-blue);
+  color: var(--desaturated-blue);
 }
 i.fa-facebook-f{
   padding: 0.5rem 0.65rem;
@@ -392,6 +418,7 @@ i.fa-facebook-f{
   }
   h3{
     text-align: left;
+    font-size: 1.5rem;
   }
   .signup p{
     text-align: left;
@@ -416,6 +443,9 @@ i.fa-facebook-f{
 }
 
 @media (min-width: 1000px){
+  header{
+    margin-bottom: 0;
+  }
   .header__contents img{
     width: 150px;
   }
@@ -462,7 +492,8 @@ i.fa-facebook-f{
     align-self: flex-start;
   }
   .aside p{
-    max-width: 480px;
+    font-size: 1rem;
+    max-width: 500px;
     align-self: flex-start;
   }
   .aside a{
@@ -475,11 +506,22 @@ i.fa-facebook-f{
 
   .signup{
     padding-inline: 5rem;
+    padding-block: 5rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  .signup p{
+    font-size: 1rem;
   }
 
   footer{
+    padding-top: 6rem;
     padding-left: 5rem;
     padding-right: clamp(5rem, 15vw + 5rem, 20rem);
+  }
+  .logo{
+    width: 175px;
   }
   .footer--links{
     justify-content: space-around;
