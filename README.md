@@ -25,3 +25,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### Continued Development
+
+Need to improve the readability of the javascript code and better control over classes added dynamically.
