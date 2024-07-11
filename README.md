@@ -15,7 +15,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- [Live Site URL]
+- [Live Site URL](https://debabratabanik.github.io/fylo-landing-page-with-two-column-layout-master/)
 - [Solution URL]
 
 ### Built with
