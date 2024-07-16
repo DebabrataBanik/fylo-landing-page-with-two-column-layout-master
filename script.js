@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('.btn')
 
 const validateEmail = (target) => {
-  const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const parentEl = target.parentElement
   let el = parentEl.querySelector('input[type="text"]');
   if(el.value !== '' && !el.value.match(validRegex)){
