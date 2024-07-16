@@ -1,4 +1,14 @@
 const buttons = document.querySelectorAll('.btn')
+const inputs = document.querySelectorAll('input')
+
+inputs.forEach(inp => {
+  inp.addEventListener('input', (e) => {
+    let span = e.target.nextElementSibling
+    if(span && span.classList.contains('display')){
+      span.classList.remove('display')
+    }
+  })
+})
 
 const validateEmail = (target) => {
   const validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
